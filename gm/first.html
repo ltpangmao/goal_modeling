@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../Treant.css" type="text/css" />
+    <link rel="stylesheet" href="gm_style.css">
+
+</head>
+
+<body>
+    <div id="gm_canvas" style="width:800px; height: 600px"> </div>
+    <div id="info_board" style="width:400px; height: 200px">fsd
+            <p id="demo"></p>
+         </div>
+
+
+
+    <!-- javascript -->
+    <script src="../vendor/raphael.js"></script>
+    <script src="../Treant.js"></script>
+    <!-- jQuery -->
+    <script src="../vendor/jquery.min.js"></script>
+    <script src="../vendor/jquery.easing.js"></script>
+    <!-- model config file -->
+    <script src="model_config.js"></script>
+    <!-- model config file -->
+    <script src="gm_op.js"></script>
+
+
+    <script>
+        var my_chart = new Treant(anti_model_config);
+
+        
+    </script>
+
+
+    <!-- add gm click event -->
+    <script>
+        var nodes = document.getElementsByClassName("gm-node");
+        for (var i = 0; i < nodes.length; i++) {
+            nodes[i].addEventListener('click', showContent);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

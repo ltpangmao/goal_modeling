@@ -1,0 +1,56 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+
+body { background: #fff; }
+/* optional Container STYLES */
+.chart { height: 550px; margin: 5px; width: 900px;  }
+/* .Treant > .node {  } */
+.Treant > p { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: bold; font-size: 12px; }
+/* .Treant > .node { background-color: rgb(162, 253, 223); } */
+
+.node-name { font-weight: bold; text-align: center; padding-left: 0px}
+
+
+/* goal model */
+.gm-node {
+    padding:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*for compitability reasons
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    */
+    border-radius: 55px / 50px;
+
+    background-color: #ffffff;
+    border: 1px solid #000;
+    width: 150px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+/* more specific, so put later than gm-node */
+.light-green {
+    background-color: #68e95c;
+}
+.blue {
+    background-color: #002fff;
+}
+
+/* nodes's different states */
+.gm-node:hover {cursor: pointer;}
+.selected-node {border: 3px solid rgb(255, 3, 3);}
+
+
+
+
+/* collapse setting */
+/* .Treant .collapse-switch { width: 100%; height: 100%; border: none;}
+.Treant .node.collapsed { border-color: #002fff; border-width: 5px}
+.Treant .node.collapsed .collapse-switch { background: none; } */
